@@ -1,0 +1,76 @@
+*************************************************Git Bash********************
+Baixar o Git Bash, diretamente no site.
+
+
+Repositório de testes:
+https://bitbucketglobal.experian.local/projects/SMEPROJECT/repos/experian-sme-credit-reports-frontend-test/browse 
+ 
+
+-----------------------------------------------------------Realizar git clone -----------------------------------------------------------------------
+
+Entrar no projeto https://bitbucketglobal.experian.local/projects/SMEPROJECT/repos/experian-sme-credit-reports-frontend/browse
+
+No Git Bash, acessar o caminho de destino (pasta onde vc vai salvar o projeto local)
+
+Realizar um git config ($ git config --global http.sslVerify false)
+
+Realizar o Git CLone ($ git clone https://CWG0660@bitbucketglobal.experian.local/scm/smeproject/experian-sme-credit-reports-frontend.git)
+
+
+-----------------------------------------------------Realizar as ações do node--------------------------------------------
+
+Instalar o NodeJs
+
+Depois realizar o npm install, no diretório do projeto
+
+
+------------------------------------------------------Commit na master--------------------------------------------------------
+
+git init
+git add --all
+git commit -m "Initial Commit"
+git remote add origin ORIGIN_URL 
+git push -u origin master
+
+Where ORIGIN_URL is your repository url (e.g. https://username@your.bitbucket.domain:7999 /yourproject/repo.git) [Obs: clonar o repositório]
+
+git pull origin master --allow-unrelated-histories
+
+git merge origin origin/master
+
+git fetch
+
+git merge master
+
+git checkout -b test
+
+git push
+
+git push --set-upstream origin test
+
+git push -u origin master
+
+git checkout develop
+
+git merge master
+
+git checkout -b test
+
+git push
+
+git push --set-upstream origin test
+
+-----------------------------------------------------Como fazer um push numa branch existente--------------------------------------------------------------------------------------------
+Vá até a pasta, que deve estar como remote configurado (origin)
+
+git add . - para adicionar tudo que foi alterado ou criado (menos os deletados)
+git status - para confirmar as ações do git add
+git commit -m "Features da v2" - para inserir as alterações
+git push origin test
+
+
+
+
+
+
+
